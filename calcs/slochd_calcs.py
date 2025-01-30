@@ -18,8 +18,9 @@ def calc_slochd(dist):
     slochd_point_m = dist * SLOCHD_RATIO_3
 
     slochd_point_km = miles_to_km(slochd_point_m)
+    slochd_dict = {'km': slochd_point_km, 'miles': slochd_point_m}  
 
-    return slochd_point_km
+    return slochd_dict
 
 def miles_to_km(miles):
     '''
